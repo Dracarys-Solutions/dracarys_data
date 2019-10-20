@@ -2,7 +2,7 @@ import csv
 import json
 import requests
 
-with open("VNP14IMGTDL_NRT_South_America_24h.csv") as file:
+with open("dados.txt") as file:
 
     z=[]
     vec=dict()
@@ -22,6 +22,4 @@ res = dict({'queimadas': res})
 
 print(res)
 
-request.post("onde vou mandar", json={'focos':res})
 
-#SALVE
